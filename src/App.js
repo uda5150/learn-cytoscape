@@ -1,25 +1,34 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import * as  React from "react";
+import "./App.css";
 
-class App extends Component {
+import logo from "./logo.svg"
+
+class App extends React.Component {
   render() {
+    const logoOptions = {
+      alt: "logo",
+      className: "App-logo",
+      src: logo
+    };
+    const title = "こんにちはReact"
+    const targets = ["World", "Kanae", "Yukina"];
+
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          {
+            // コメント
+          }
+          <img {...logoOptions} />
+          { }
+          { title && <h1 className="App-title">{title}</h1> }
         </header>
+        {targets.map(target => (
+          <p className="App-intro">
+            Hello, {target}!
+          </p>
+        ))}
       </div>
     );
   }
