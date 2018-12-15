@@ -2311,6 +2311,13 @@ cyclist@~0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/cyclist/-/cyclist-0.2.2.tgz#1b33792e11e914a2fd6d6ed6447464444e5fa640"
 
+cytoscape@^3.2.19:
+  version "3.3.1"
+  resolved "https://registry.yarnpkg.com/cytoscape/-/cytoscape-3.3.1.tgz#fd393d92725ae6c8f38eb64e85f143fc0144815f"
+  dependencies:
+    heap "^0.2.6"
+    lodash.debounce "^4.0.8"
+
 damerau-levenshtein@^1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/damerau-levenshtein/-/damerau-levenshtein-1.0.4.tgz#03191c432cb6eea168bb77f3a55ffdccb8978514"
@@ -3673,6 +3680,10 @@ hash.js@^1.0.0, hash.js@^1.0.3:
 he@1.2.x:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/he/-/he-1.2.0.tgz#84ae65fa7eafb165fddb61566ae14baf05664f0f"
+
+heap@^0.2.6:
+  version "0.2.6"
+  resolved "https://registry.yarnpkg.com/heap/-/heap-0.2.6.tgz#087e1f10b046932fc8594dd9e6d378afc9d1e5ac"
 
 hex-color-regex@^1.1.0:
   version "1.1.0"
@@ -6666,6 +6677,13 @@ react-app-polyfill@^0.1.3:
     raf "3.4.0"
     whatwg-fetch "3.0.0"
 
+react-cytoscapejs@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/react-cytoscapejs/-/react-cytoscapejs-1.1.0.tgz#2175e444f12f4023901a960f71e761cb5b5d0b3a"
+  dependencies:
+    cytoscape "^3.2.19"
+    prop-types "^15.6.2"
+
 react-dev-utils@^6.1.1:
   version "6.1.1"
   resolved "https://registry.yarnpkg.com/react-dev-utils/-/react-dev-utils-6.1.1.tgz#a07e3e8923c4609d9f27e5af5207e3ca20724895"
@@ -6695,7 +6713,7 @@ react-dev-utils@^6.1.1:
     strip-ansi "4.0.0"
     text-table "0.2.0"
 
-react-dom@16.6.3:
+react-dom@^16.6.3:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react-dom/-/react-dom-16.6.3.tgz#8fa7ba6883c85211b8da2d0efeffc9d3825cccc0"
   dependencies:
@@ -6762,7 +6780,7 @@ react-scripts@2.1.1:
   optionalDependencies:
     fsevents "1.2.4"
 
-react@16.6.3:
+react@^16.6.3:
   version "16.6.3"
   resolved "https://registry.yarnpkg.com/react/-/react-16.6.3.tgz#25d77c91911d6bbdd23db41e70fb094cc1e0871c"
   dependencies:
